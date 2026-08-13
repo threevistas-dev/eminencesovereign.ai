@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy – Eminence Sovereign</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <style>
+    :root {
+      --void: #0b0a14;
+      --graphite: #12111e;
+      --line: #26243a;
+      --line-soft: #1c1b2b;
+      --bone: #e9eaf3;
+      --paper: #dcdee8;
+      --fog: #a7a9be;
+      --ash: #7c7e95;
+      --signal: #684C9A;
+      --violet: #737AAC;
+      --f: 'Aptos', 'Archivo', 'Segoe UI', system-ui, sans-serif;
+      --pad: clamp(22px, 6vw, 80px);
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      margin: 0;
+      background: var(--void);
+      color: var(--paper);
+      font-family: var(--f);
+      line-height: 1.7;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      position: relative;
+      overflow-x: hidden
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background: radial-gradient(60% 45% at 85% -8%, rgba(104, 76, 154, .18), transparent 60%),
+        radial-gradient(50% 40% at 5% 105%, rgba(90, 68, 198, .14), transparent 62%);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px var(--pad);
+      background: rgba(11, 10, 20, .82);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line-soft)
+    }
+
+    header img {
+      height: 44px;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+      object-position: left center;
+      display: block
+    }
+
+    header a.back {
+      font-size: .82rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--violet);
+      text-decoration: none;
+      font-family: 'Archivo', sans-serif
+    }
+
+    header a.back:hover {
+      color: var(--bone)
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: clamp(40px, 7vw, 80px) var(--pad) 80px
+    }
+
+    .eyebrow {
+      font-size: .75rem;
+      letter-spacing: .32em;
+      text-transform: uppercase;
+      color: var(--signal);
+      font-family: 'Archivo', sans-serif;
+      display: block;
+      margin-bottom: 14px
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 2.7rem);
+      font-weight: 700;
+      color: var(--bone);
+      letter-spacing: -.01em;
+      line-height: 1.1;
+      margin: 0 0 6px
+    }
+
+    h2 {
+      font-size: clamp(1.2rem, 2.2vw, 1.5rem);
+      font-weight: 600;
+      color: var(--violet);
+      margin: 42px 0 12px;
+      letter-spacing: -.005em
+    }
+
+    h3 {
+      font-size: 1.02rem;
+      font-weight: 600;
+      color: var(--paper);
+      margin: 24px 0 8px
+    }
+
+    p {
+      margin: 0 0 16px;
+      color: var(--fog)
+    }
+
+    p.strong-line {
+      color: var(--paper);
+      font-weight: 600
+    }
+
+    p.muted-i {
+      color: var(--ash);
+      font-style: italic;
+      font-size: .95rem
+    }
+
+    strong {
+      color: var(--paper);
+      font-weight: 600
+    }
+
+    a {
+      color: var(--violet);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(115, 122, 172, .35)
+    }
+
+    .brand-logo {
+      border: none;
+    }
+
+    a:hover {
+      color: var(--bone);
+      border-bottom-color: var(--bone)
+    }
+
+    ul {
+      margin: 0 0 18px;
+      padding-left: 22px;
+      color: var(--fog)
+    }
+
+    li {
+      margin: 0 0 8px
+    }
+
+    li::marker {
+      color: var(--signal)
+    }
+
+    .effective {
+      color: var(--ash);
+      font-style: italic;
+      margin-bottom: 8px
+    }
+
+    .rule {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--line), transparent);
+      margin: 20px 0 0
+    }
+
+    footer {
+      position: relative;
+      z-index: 1;
+      border-top: 1px solid var(--line-soft);
+      padding: 28px var(--pad);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 24px;
+      align-items: center;
+      justify-content: space-between;
+      font-size: .82rem;
+      color: var(--ash);
+      font-family: 'Archivo', sans-serif
+    }
+
+    footer a {
+      color: var(--ash);
+      border: 0
+    }
+
+    footer a:hover {
+      color: var(--violet)
+    }
+
+    .footlinks a {
+      margin: 0 2px
+    }
+
+    .fdesc-info h4 {
+      font-family: var(--f-mono);
+      font-size: 11px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--fog);
+      margin-bottom: 16px;
+      font-weight: 500
+    }
+
+    .fdesc-info {
+      margin-top: 15px;
+    }
+
+    .fdesc-info>div {
+      display: flex;
+      justify-content: flex-start;
+      gap: 10px;
+    }
+
+    .fdesc-info h4 {
+      margin: 0;
+    }
+
+    .fdesc-info span {
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="index.html" aria-label="Eminence Sovereign home" class="brand-logo"><img
+        src="data:image/png;base64,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"
+        alt="Eminence Sovereign"></a>
+    <a class="back" href="/index.html">← Back to site</a>
+  </header>
+  <main>
+    <span class="eyebrow">Legal</span>
+    <h1>Privacy Policy</h1>
+    <p class="strong-line">Eminence Sovereign AI</p>
+    <p class="muted-i">Effective Date: March 16, 2026</p>
+    <h2>1. Introduction</h2>
+    <p>Eminence Sovereign, LLC (“Eminence Sovereign”, “we,” “us,” or “our”) operates the website <a
+        href="https://www.eminencesovereign.ai" target="_blank" rel="noopener">www.eminencesovereign.ai</a> (the
+      “Website”). We are an AI-native infrastructure firm providing sovereign AI data centers, private optical backbone
+      networks, and vertically integrated infrastructure-as-a-service solutions for defense, intelligence, and
+      enterprise clients.</p>
+    <p>This Privacy Policy describes how we collect, use, disclose, and protect your personal information when you visit
+      our Website or interact with us. We are committed to safeguarding your privacy and ensuring transparency in how we
+      handle your data.</p>
+    <p>By accessing or using our Website, you acknowledge that you have read, understood, and agree to the practices
+      described in this Privacy Policy. If you do not agree with this policy, please do not use our Website.</p>
+    <h2>2. Information We Collect</h2>
+    <h3>Information You Provide Directly</h3>
+    <p>When you interact with our Website, you may voluntarily provide us with personal information, including through
+      our contact form. This may include:</p>
+    <ul>
+      <li>Name (required)</li>
+      <li>Email address (required)</li>
+      <li>Phone number (optional)</li>
+      <li>Type of inquiry (selected from a dropdown menu)</li>
+      <li>Any additional information you choose to include in your message</li>
+    </ul>
+    <h3>Automatically Collected Information</h3>
+    <p>When you visit our Website, we may automatically collect certain information about your device and usage,
+      including:</p>
+    <ul>
+      <li>IP address</li>
+      <li>Browser type and version</li>
+      <li>Device type and operating system</li>
+      <li>Pages visited and content viewed</li>
+      <li>Referring URLs (the website that directed you to our site)</li>
+      <li>Date and time of access</li>
+      <li>Time spent on pages</li>
+    </ul>
+    <h3>Cookies and Tracking Technologies</h3>
+    <p>Our Website uses cookies and similar tracking technologies to enhance your experience. These include cookies set
+      by Google reCAPTCHA (used to protect our contact form from spam and abuse), WordPress content management system
+      cookies, and potentially analytics cookies. For more information, see Section 5 below.</p>
+    <h3>Mobile and SMS Data</h3>
+    <p>If you interact with us through mobile or SMS channels, we may collect information as described in our Mobile
+      Data Policy. We do not share mobile information with third parties for marketing or promotional purposes.</p>
+    <h2>3. How We Use Your Information</h2>
+    <p>We use the information we collect for the following purposes:</p>
+    <ul>
+      <li>To respond to your inquiries and provide requested information about our services</li>
+      <li>To communicate with you about our services, including AI infrastructure, sovereign data centers, and related
+        solutions</li>
+      <li>To improve our Website functionality and user experience</li>
+      <li>To ensure security and prevent fraud, spam, and abuse (including through Google reCAPTCHA)</li>
+      <li>To comply with applicable legal obligations and regulatory requirements</li>
+      <li>To analyze Website usage trends and improve our content and offerings</li>
+      <li>To administer and protect our Website and business operations</li>
+    </ul>
+    <h2>4. How We Share Your Information</h2>
+    <p>We do not sell your personal information to third parties. We may share your information in the following limited
+      circumstances:</p>
+    <p><strong>Service Providers.</strong> We may share information with trusted third-party service providers who
+      assist us in operating our Website and conducting our business, including WordPress hosting providers, Google (for
+      reCAPTCHA functionality), and analytics services. These providers are contractually obligated to use your
+      information only as necessary to perform services on our behalf.</p>
+    <p><strong>Business Transfers.</strong> In the event of a merger, acquisition, reorganization, bankruptcy, or other
+      similar transaction, your personal information may be transferred as part of that transaction. We will provide
+      notice before your information becomes subject to a different privacy policy.</p>
+    <p><strong>Legal Requirements.</strong> We may disclose your information if required to do so by law or in response
+      to valid legal process, including subpoenas, court orders, or government requests. We may also disclose
+      information to protect our rights, property, or safety, or the rights, property, or safety of others.</p>
+    <p><strong>With Your Consent.</strong> We may share your information for other purposes with your explicit consent.
+    </p>
+    <h2>5. Cookies and Tracking Technologies</h2>
+    <p>Our Website uses the following types of cookies and tracking technologies:</p>
+    <p><strong>Essential Cookies.</strong> These cookies are necessary for the Website to function properly. They
+      include WordPress session cookies that maintain your browsing session and enable core site functionality. These
+      cookies cannot be disabled without impairing the Website.</p>
+    <p><strong>Analytics Cookies.</strong> We may use analytics cookies to understand how visitors interact with our
+      Website, including which pages are visited most frequently and how users navigate the site. This information helps
+      us improve our Website and services.</p>
+    <p><strong>Google reCAPTCHA Cookies.</strong> Our contact form uses Google reCAPTCHA to protect against spam and
+      abuse. reCAPTCHA may set cookies and collect information about your interaction with the form. Google’s use of
+      this data is governed by the Google Privacy Policy and Terms of Use.</p>
+    <h3>Managing Cookies</h3>
+    <p>Most web browsers allow you to control cookies through their settings. You can typically set your browser to
+      refuse all cookies, accept only certain cookies, or notify you when a cookie is set. Please note that disabling
+      cookies may affect the functionality of our Website. Instructions for managing cookies vary by browser; consult
+      your browser’s help documentation for specific guidance.</p>
+    <h2>6. Data Security</h2>
+    <p>We implement appropriate technical and organizational security measures designed to protect your personal
+      information against unauthorized access, alteration, disclosure, or destruction. As a company specializing in AI
+      infrastructure security, sovereign data centers, and post-quantum cryptography, we take the security of all data,
+      including your personal information, seriously.</p>
+    <p>Our security practices include encryption of data in transit, access controls, regular security assessments, and
+      adherence to industry best practices. However, no method of transmission over the Internet or method of electronic
+      storage is completely secure. While we strive to protect your personal information, we cannot guarantee its
+      absolute security.</p>
+    <h2>7. Data Retention</h2>
+    <p>We retain your personal information only for as long as necessary to fulfill the purposes for which it was
+      collected, including to satisfy any legal, accounting, or reporting requirements. When determining the appropriate
+      retention period, we consider the amount, nature, and sensitivity of the information, the potential risk of harm
+      from unauthorized use or disclosure, and applicable legal requirements.</p>
+    <p>When your personal information is no longer needed, we will securely delete or anonymize it in accordance with
+      our data retention policies and applicable law.</p>
+    <h2>8. Your Rights and Choices</h2>
+    <p>Depending on your location and applicable law, you may have certain rights regarding your personal information:
+    </p>
+    <p><strong>Access and Correction.</strong> You may request access to the personal information we hold about you and
+      ask us to correct any inaccurate or incomplete information.</p>
+    <p><strong>Deletion.</strong> You may request that we delete your personal information, subject to certain legal
+      exceptions.</p>
+    <p><strong>Opt-Out of Marketing Communications.</strong> If you receive marketing communications from us, you may
+      opt out at any time by following the unsubscribe instructions included in those communications or by contacting us
+      through our Website.</p>
+    <p><strong>Cookie Preferences.</strong> You may manage your cookie preferences through your browser settings as
+      described in Section 5 above.</p>
+    <h3>California Residents — CCPA Rights</h3>
+    <p>If you are a California resident, and to the extent applicable to our processing activities, the California
+      Consumer Privacy Act, as amended by the California Privacy Rights Act (collectively, “CCPA”), may provide you with
+      additional rights regarding your personal information:</p>
+    <ul>
+      <li><strong>Right to Know:</strong> You have the right to request that we disclose what personal information we
+        collect, use, disclose, and sell about you.</li>
+      <li><strong>Right to Delete:</strong> You have the right to request the deletion of personal information we have
+        collected from you, subject to certain exceptions.</li>
+      <li><strong>Right to Opt-Out of Sale:</strong> We do not sell or share your personal information. However, you
+        have the right to opt out of any future sale or sharing of your personal information.</li>
+      <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising any of your
+        CCPA rights.</li>
+    </ul>
+    <p>To exercise any of these rights, please contact us through the contact form on our Website.</p>
+    <h2>9. Third-Party Links</h2>
+    <p>Our Website may contain links to third-party websites, services, or resources that are not owned or controlled by
+      Eminence Sovereign. We are not responsible for the privacy practices or content of these third-party sites. We
+      encourage you to review the privacy policies of any third-party website you visit. The inclusion of any link does
+      not imply endorsement by Eminence Sovereign.</p>
+    <h2>10. Children’s Privacy</h2>
+    <p>Our Website is not directed at children under the age of 13, and we do not knowingly collect personal information
+      from children under 13. If we become aware that we have inadvertently collected personal information from a child
+      under 13, we will take steps to delete that information as promptly as possible. If you believe we may have
+      collected information from a child under 13, please contact us through our Website.</p>
+    <h2>11. International Users</h2>
+    <p>Eminence Sovereign is based in the United States, and our Website and services are designed for users within the
+      United States. If you access our Website from outside the United States, please be aware that your information may
+      be transferred to, stored, and processed in the United States, where data protection laws may differ from those in
+      your jurisdiction.</p>
+    <p>By using our Website, you consent to the transfer of your information to the United States and the processing of
+      your information in accordance with this Privacy Policy.</p>
+    <h2>12. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technologies, legal
+      requirements, or other factors. When we make changes, we will revise the “Effective Date” at the top of this
+      policy and post the updated policy on this page. We encourage you to review this Privacy Policy periodically to
+      stay informed about how we protect your information.</p>
+    <p>Your continued use of our Website after any changes to this Privacy Policy constitutes your acceptance of the
+      updated policy.</p>
+    <h2>13. Contact Us</h2>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please
+      contact us through the contact form on our Website:</p>
+    <p class="strong-line">Eminence Sovereign</p>
+    <p><a href="https://www.eminencesovereign.ai" target="_blank" rel="noopener">www.eminencesovereign.ai</a></p>
+    <p class="muted-i">© 2026 Eminence Sovereign. All rights reserved.</p>
+  </main>
+  <footer>
+    <span>© 2026 Eminence Sovereign. All rights reserved.</span>
+    <div class="fdesc-info">
+      <div>
+        <h4>Unique Entity ID: </h4> <span>PEHWL94DFP27</span>
+      </div>
+      <div>
+        <h4>Cage Code:</h4> <span>161P6</span>
+      </div>
+    </div>
+    <span class="footlinks"><a href="mobile-data-policy.html">Mobile Data Policy</a> &nbsp;|&nbsp; <a
+        href="terms-conditions.html">Terms &amp; Conditions</a> &nbsp;|&nbsp; <a href="privacy-policy.html">Privacy
+        Policy</a></span>
+  </footer>
+</body>
+
+</html>
